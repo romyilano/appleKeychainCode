@@ -15,8 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D68E7A01D689D0000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		1F09A1901F0A494000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		5FC374405FC380D000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		5FCAB4905FCAB21000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		C2046F982096BF8100CA4798 /* KeychainAuthenticator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainAuthenticator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2046F9B2096BF8100CA4798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2046F9D2096BF8100CA4798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,18 +38,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D6893F01D68890000000001 /* Configuration */ = {
+		5FC26D705FC27D3000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				1D68E7A01D689D0000000001 /* SampleCode.xcconfig */,
+				5FC374405FC380D000000001 /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
 		};
-		1F0286501F0265A000000001 /* LICENSE */ = {
+		62310F4062306F1000000001 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
-				1F09A1901F0A494000000001 /* LICENSE.txt */,
+				5FCAB4905FCAB21000000001 /* LICENSE.txt */,
 			);
 			name = LICENSE;
 			path = LICENSE;
@@ -61,8 +61,8 @@
 				C2046FCC209795DE00CA4798 /* README.md */,
 				C2046F9A2096BF8100CA4798 /* KeychainAuthenticator */,
 				C2046F992096BF8100CA4798 /* Products */,
-				1D6893F01D68890000000001 /* Configuration */,
-				1F0286501F0265A000000001 /* LICENSE */,
+				5FC26D705FC27D3000000001 /* Configuration */,
+				62310F4062306F1000000001 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +97,7 @@
 				C2046F942096BF8100CA4798 /* Sources */,
 				C2046F952096BF8100CA4798 /* Frameworks */,
 				C2046F962096BF8100CA4798 /* Resources */,
-				C2046FCD2097D3AD00CA4798,
+				6730808067307D2000000001,
 			);
 			buildRules = (
 			);
@@ -120,7 +120,7 @@
 				TargetAttributes = {
 					C2046F972096BF8100CA4798 = {
 						CreatedOnToolsVersion = 9.4;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -189,7 +189,7 @@
 /* Begin XCBuildConfiguration section */
 		C2046FA82096BF8300CA4798 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D68E7A01D689D0000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 5FC374405FC380D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -250,7 +250,7 @@
 		};
 		C2046FA92096BF8300CA4798 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D68E7A01D689D0000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 5FC374405FC380D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -305,7 +305,7 @@
 		};
 		C2046FAB2096BF8300CA4798 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D68E7A01D689D0000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 5FC374405FC380D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,14 +319,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.KeychainAuthenticator${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C2046FAC2096BF8300CA4798 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D68E7A01D689D0000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 5FC374405FC380D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.KeychainAuthenticator${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

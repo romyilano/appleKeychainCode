@@ -40,7 +40,7 @@ let context = LAContext()
 context.touchIDAuthenticationAllowableReuseDuration = 10
 ```
 
-In this example, you set the context’s [touchIDAuthenticationAllowableReuseDuration](https://developer.apple.com/documentation/localauthentication/lacontext/1622329-touchidauthenticationallowablere) parameter to a non-zero value. As a result, any Touch ID authentication that keychain services requires is satisfied by the most recent device unlock event, if it happened within the given number of seconds (up to five mintues). This configuration prevents the user from having to authenticate twice in quick succession: once to get into the device, and immediately again to obtain a keychain item. Note that this grace period applies specifically to device unlock with Touch ID, not keychain retrieval authentications. 
+In this example, you set the context’s [touchIDAuthenticationAllowableReuseDuration](https://developer.apple.com/documentation/localauthentication/lacontext/1622329-touchidauthenticationallowablere) parameter to a non-zero value. As a result, any Touch ID authentication that keychain services requires is satisfied by the most recent device unlock event, if it happened within the given number of seconds (up to five minutes). This configuration prevents the user from having to authenticate twice in quick succession: once to get into the device, and immediately again to obtain a keychain item. Note that this grace period applies specifically to device unlock with Touch ID, not keychain retrieval authentications. 
 
 ## Add the Keychain Item
 
