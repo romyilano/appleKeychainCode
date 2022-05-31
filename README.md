@@ -71,11 +71,13 @@ When reading the protected item, you search for it as described in [Searching fo
 First, you can provide a string that the authentication context presents to the user when asking for a TouchID event. Set this string in the [kSecUseOperationPrompt](https://developer.apple.com/documentation/security/ksecuseoperationprompt) attribute of the keychain item search query:
 
 ``` swift
+let context = LAContext()
+context.localizedReason = "Access your password on the keychain"
 let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
                             kSecAttrServer as String: server,
                             kSecMatchLimit as String: kSecMatchLimitOne,
                             kSecReturnAttributes as String: true,
-                            kSecUseOperationPrompt as String: "Access your password on the keychain",
+                            kSecUseAuthenticationContext as String: context,
                             kSecReturnData as String: true]
 ```
 

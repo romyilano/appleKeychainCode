@@ -108,11 +108,13 @@ class ViewController: UIViewController {
 
     /// Reads the stored credentials for the given server.
     func readCredentials(server: String) throws -> Credentials {
+        let context = LAContext()
+        context.localizedReason = "Access your password on the keychain"
         let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
                                     kSecAttrServer as String: server,
                                     kSecMatchLimit as String: kSecMatchLimitOne,
                                     kSecReturnAttributes as String: true,
-                                    kSecUseOperationPrompt as String: "Access your password on the keychain",
+                                    kSecUseAuthenticationContext as String: context,
                                     kSecReturnData as String: true]
 
         var item: CFTypeRef?
